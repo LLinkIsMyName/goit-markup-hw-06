@@ -27,7 +27,7 @@ a {
     color: #2E2F42;
 }
 
-.page-nav-item {
+.page-nav-item-link {
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
@@ -41,8 +41,15 @@ a {
     color: #404BBF;
 }
 
+.contacts {
+    font-style: normal;
+}
+
 .contacts-item-link {
     color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     font-family: inherit;
 }
 
@@ -60,7 +67,7 @@ a {
     text-align: center;
     font-size: 56px;
     font-weight: 700;
-    line-height: 1.01;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     font-family: inherit;
 
@@ -87,8 +94,12 @@ a {
     background: #FFF;
 }
 
+.strengths-title {
+    color: #2e2f42;
+}
 
 .subtitle {
+    color: #2e2f42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -96,15 +107,14 @@ a {
 }
 
 
-p {
+.text {
+    color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.strengths-title {
-    color: #2e2f42;
-}
+
 
 .our-team {
     background: #F4F4FD;
@@ -120,10 +130,6 @@ p {
     text-transform: capitalize;
 }
 
-.team-text {
-    color: #2e2f42;
-    font-size: 16px;
-}
 
 
 .our-team-item {
@@ -152,9 +158,6 @@ p {
     background: var(--WHITE, #FFF);
 }
 
-.portfolio-text {
-    color: #434455;
-}
 
 
 .footer {
@@ -177,5 +180,8 @@ p {
 }
 
 .footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #F4F4FD;
 }
