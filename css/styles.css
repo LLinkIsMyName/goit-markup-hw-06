@@ -5,12 +5,52 @@ body {
 
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+header .container {
+    display: flex;
+}
+
+.page-nav {
+    display: flex;
 }
 
 .logo-header {
@@ -21,10 +61,17 @@ a {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-black {
     color: #2E2F42;
+}
+
+.page-nav-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
 }
 
 .page-nav-item-link {
@@ -41,8 +88,20 @@ a {
     color: #404BBF;
 }
 
+
+
 .contacts {
     font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-list {
+    display: flex;
+    gap: 40px;
+}
+
+.contacts-item {
+    display: list-item;
 }
 
 .contacts-item-link {
@@ -60,7 +119,15 @@ a {
 
 .hero {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
+
+section {
+    padding: 120px;
+}
+
+
 
 .hero-title {
     color: #FFF;
@@ -70,18 +137,25 @@ a {
     line-height: 1.07;
     letter-spacing: 0.02em;
     font-family: inherit;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 
 }
 
 .order-button {
     background: #4D5AE5;
-
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    min-width: 169px;
 }
 
 .order-button:hover,
@@ -92,10 +166,34 @@ a {
 
 .our-strengths {
     background: #FFF;
+    padding: 120px 0;
 }
+
+.our-strengths-list {
+    display: flex;
+    gap: 24px;
+}
+
+.our-strengths-item {
+    width: calc((100% - 72px) / 4);
+}
+
 
 .strengths-title {
     color: #2e2f42;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .subtitle {
@@ -106,6 +204,15 @@ a {
     letter-spacing: 0.02em;
 }
 
+.sub-strength {
+    margin-bottom: 8px;
+}
+
+.strengths {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .text {
     color: #434455;
@@ -128,13 +235,34 @@ a {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.our-team-list {
+    display: flex;
+    gap: 24px;
 }
 
 
-
 .our-team-item {
-    background: #FFF;
 
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
+.team-container {
+    padding: 32px 0;
+}
+
+.sub-team {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.txt-team {
+    text-align: center;
 }
 
 .portfolio {
@@ -149,13 +277,29 @@ a {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
-
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
 
 .portfolio-item {
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
-    background: var(--WHITE, #FFF);
+    width: calc((100% - 48px) / 3);
+
+}
+
+.portfolio-container {
+    border: 1px solid #E7E9FC;
+    padding: 32px 16px;
+    border-top: none;
+}
+
+.sub-portfolio {
+    margin-bottom: 8px;
 }
 
 
@@ -163,7 +307,10 @@ a {
 .footer {
     background: #2E2F42;
     color: #F4F4FD;
+    padding: 100px 0;
 }
+
+
 
 .logo-footer {
     color: #4d5ae5;
@@ -173,6 +320,7 @@ a {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .logo-white {
@@ -184,4 +332,5 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    max-width: 264px;
 }
