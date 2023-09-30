@@ -53,6 +53,7 @@ header .container {
 .page-nav {
     display: flex;
     align-items: center;
+
 }
 
 .logo-header {
@@ -73,7 +74,7 @@ header .container {
 .page-nav-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
+
 }
 
 .page-nav-item-link {
@@ -83,6 +84,7 @@ header .container {
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-family: inherit;
+    padding: 24px 0;
 }
 
 .page-nav-item-link:hover,
