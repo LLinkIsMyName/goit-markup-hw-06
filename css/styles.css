@@ -480,10 +480,13 @@ header .container {
 .soc-list-footer {
     display: flex;
     gap: 16px;
-    max-width: calc((100% - 48px) / 4);
     justify-content: center;
 }
 
+.list-item-footer {
+    width: 40px;
+    height: 40px;
+}
 
 .item-footer-link {
     display: flex;
@@ -494,8 +497,6 @@ header .container {
     border-radius: 50%;
     fill: #F4F4FD;
     background-color: #4D5AE5;
-    width: 40px;
-    height: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
