@@ -469,7 +469,7 @@
         <div class="subscribe">
           <p class="footer-title">Subscribe</p>
           <form class="sub-form" autocomplete="off">
-            <label for="email">
+            <label for="email" class="footer-form-lable">
               <input
                 type="email"
                 name="email"
@@ -542,30 +542,32 @@
           </div>
 
           <div class="modal-field">
-            <label for="comment" class="modal-lable">Comment</label>
+            <label for="user-comment" class="modal-lable">Comment</label>
             <textarea
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               class="modal-txt"
             ></textarea>
           </div>
-          <div class="modal-field">
+          <div class="modal-field policy">
             <input
               type="checkbox"
-              name="modal-check"
-              id="modal-check"
+              name="user-privacy"
+              id="user-privacy"
               class="check-input"
+              value="true"
+              class="visually-hidden"
             />
 
-            <label for="modal-check" class="check-txt"
+            <label for="user-privacy" class="check-txt"
               ><span class="checkbox-diy"
-                ><svg class="check-icon" width="10" height="10">
+                ><svg class="check-icon" width="10" height="8">
                   <use
                     href="./images/icons.svg#icon-Checkbox"
                   ></use></svg></span
               >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></label
+              <a href="" class="policy-link">Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="modal-btn-sub">Send</button>

@@ -589,19 +589,20 @@ header .container {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: #FFF;
     font-size: 12px;
-    line-height: 2.0;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 }
 
 .footer-input::placeholder {
+    color: #FFF;
     font-size: 12px;
-    line-height: 2.0;
+    line-height: 1.5;
     letter-spacing: 0.04em;
 
 }
 
 .form-btn {
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
     background-color: #4D5AE5;
@@ -611,6 +612,9 @@ header .container {
     align-items: center;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .send-icon {
@@ -632,6 +636,7 @@ header .container {
     background-color: rgba(46, 47, 66, 0.40);
     top: 0;
     left: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -639,7 +644,7 @@ header .container {
 
 .modal {
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -662,6 +667,9 @@ header .container {
 }
 
 .modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 24px;
     height: 24px;
     padding: 0;
@@ -678,11 +686,12 @@ header .container {
 .modal-btn:focus {
     background-color: #404BBF;
     fill: #FFF;
+    border: none;
 
 }
 
 .modal-btn-icon {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -717,21 +726,22 @@ header .container {
     margin-bottom: 4px;
     display: block;
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
 }
 
 .modal-input-wrap {
     position: relative;
+    margin-bottom: 16px
 }
 
 .input-icon {
     fill: #2E2F42;
     position: absolute;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    left: 18px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -748,30 +758,24 @@ header .container {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-txt:focus {
     border-color: #4D5AE5;
 }
 
-.check-input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.policy {
+    margin-bottom: 24px;
 }
+
+
 
 
 
 .check-txt {
     font-size: 12px;
-    line-height: 1.2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
 }
@@ -798,13 +802,13 @@ header .container {
 .check-input:checked+.check-txt>.checkbox-diy {
     background-color: #404BBF;
     border: none;
-    fill: #FFFFFF;
+    fill: #F4F4FD;
     border-color: #404BBF;
 }
 
 
 .modal-btn-sub {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     padding: 16px 32px;
     border-radius: 4px;
@@ -819,7 +823,8 @@ header .container {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-btn-sub:hover,
