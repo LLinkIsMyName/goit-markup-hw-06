@@ -75,7 +75,7 @@ header .container {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 149px;
-    margin-left: 16px;
+
 }
 
 .logo-black {
@@ -159,6 +159,9 @@ header .container {
     margin-top: 72px;
 }
 
+.blue-studio {
+    color: #404BBF;
+}
 
 .menu-nav-item-link {
     color: #2E2F42;
@@ -191,6 +194,10 @@ header .container {
     flex-direction: column;
     gap: 24px;
     margin-bottom: 48px;
+}
+
+.blue-phone {
+    color: #4D5AE5;
 }
 
 .mob-cont-item-link {
@@ -930,6 +937,8 @@ header .container {
 
     header .container {
         justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
     }
 
     .logo-header {
@@ -1110,6 +1119,7 @@ header .container {
 
     .logo-header {
         margin-right: 76px;
+        margin-left: 16px;
     }
 
     .menu-btn {
@@ -1126,6 +1136,10 @@ header .container {
         gap: 40px;
     }
 
+    .contacts-item-link {
+        font-size: 16px;
+    }
+
     .hero {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
         max-width: 1440px;
@@ -1138,6 +1152,10 @@ header .container {
 
     .our-strengths {
         padding: 120px 0;
+    }
+
+    .sub-strength {
+        font-size: 20px;
     }
 
     .our-strengths-list {
